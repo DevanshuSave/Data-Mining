@@ -1,0 +1,38 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -N 2 -A "weka.core.EuclideanDistance -R first-last" -I 500 -S 10
+Relation:     gd
+Instances:    20
+Attributes:   4
+              AGE
+              FRIENDS
+              GENDER
+              CLASS_SUGGEST
+Test mode:    evaluate on training data
+
+=== Model and evaluation on training set ===
+
+
+kMeans
+======
+
+Number of iterations: 4
+Within cluster sum of squared errors: 13.59473466584436
+Missing values globally replaced with mean/mode
+
+Cluster centroids:
+                             Cluster#
+Attribute        Full Data          0          1
+                      (20)        (7)       (13)
+================================================
+AGE               Teenager        Kid   Teenager
+FRIENDS               61.8    29.7143    79.0769
+GENDER                Male     Female       Male
+CLASS_SUGGEST            Y          N          Y
+
+
+Clustered Instances
+
+0       7 ( 35%)
+1      13 ( 65%)
+
